@@ -1,0 +1,80 @@
+#mission-deets {
+    background-image: url(../img/mission.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+#mission-deets::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+#thanks section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+#thanks .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.left {
+  width: 50%;
+  height: 600px;
+  background: url(../img/gcrt.jpg) no-repeat center / cover;
+  border-radius: 8px;
+}
+.right {
+  width: 50%;
+  min-height: 400px;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-left: -150px;
+}
+.right h1 {
+  color: #304291;
+}
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  #thanks .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+    height: 400px;
+  }
+  .right {
+    width: 90%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
