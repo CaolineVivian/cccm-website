@@ -243,7 +243,7 @@ form .form-control {
 }
 
 .footer-top a:hover {
-    color: var(--white);
+    color: var(--dark);
 }
 
 .footer-bottom {
@@ -254,3 +254,18 @@ form .form-control {
     background-color: #304291;
     color: #fff;
 }
+
+/* google map */
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
