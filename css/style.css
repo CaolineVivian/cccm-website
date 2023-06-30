@@ -9,6 +9,11 @@
     --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
+#legit{
+    background-color: #304291;
+    color: #fff;
+}
+
 body {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
